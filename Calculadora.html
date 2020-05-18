@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>>calculadora</title>
+    <style>
+        body {
+            background-color: darkblue;
+        }
+        form {
+            text-align: center;
+            border 5px solid black;
+            margin-top: 15%;
+            border-radius: 10px;
+        }
+        #all {
+            color: red;
+            width: 5%;
+            height: 3%;
+            border-radius: 20px;
+            background-color: black;
+            margin-top: 10px;
+            font-family: "Times New Roman";
+            font-size: medium;
+            border 2px solid red;
+
+        }
+        #text {
+            width: 390px;
+            height: 25px;
+            font-family: "Times New Roman";
+            font-size: medium;
+            border-radius: unset;
+        }
+        #m {
+            width: 10%;
+            height: 3%;
+            border-radius: 20px;
+            margin-top: 10px;
+            font-family: "Times New Roman";
+            font-size: large;
+        }
+
+    </style>
+</head>
+<body>
+    <form name="calc">
+        <h1>Calculadora</h1>
+            <input type="text" name="ask" id="text" disabled><br/>
+            <input type="button" value="1" id="all" onclick="calc.ask.value+='1'">
+            <input type="button" value="2" id="all" onclick="calc.ask.value+='2'">
+            <input type="button" value="3" id="all" onclick="calc.ask.value+='3'">
+            <input type="button" value="+" id="all" onclick="calc.ask.value+='+'"><br/>
+            <input type="button" value="4" id="all" onclick="calc.ask.value+='4'">
+            <input type="button" value="5" id="all" onclick="calc.ask.value+='5'">
+            <input type="button" value="6" id="all" onclick="calc.ask.value+='6'">
+            <input type="button" value="-" id="all" onclick="calc.ask.value+='-'"><br>
+            <input type="button" value="7" id="all" onclick="calc.ask.value+='7'">
+            <input type="button" value="8" id="all" onclick="calc.ask.value+='8'">
+            <input type="button" value="9" id="all" onclick="calc.ask.value+='9'">
+            <input type="button" value="*" id="all" onclick="calc.ask.value+='*'"><br>
+            <input type="button" value="," id="all" onclick="calc.ask.value+=','">
+            <input type="button" value="0" id="all" onclick="calc.ask.value+='0'">
+            <input type="button" value="." id="all" onclick="calc.ask.value+='.'">
+            <input type="button" value="/" id="all" onclick="calc.ask.value+='/'"><br>
+            <input type="button" value="=" onclick="calc.ask.value=eval(calc.ask.value)" id="m">
+            <button value="clear all" type="reset" id="m">C</button>
+
+
+    </form>
+
+</body>
+</html>
